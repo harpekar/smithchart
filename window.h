@@ -4,12 +4,17 @@
 #include <qwt/qwt_plot.h>
 #include <qwt/qwt_plot_curve.h>
 
+#include <QLineEdit>
 #include <QBoxLayout>
 
 class Window : public QWidget { 
     private:
         QwtPlot plot;
         QwtPlotCurve curve;
+
+        QLineEdit charImpSet;
+        QLineEdit real;
+        QLineEdit imagin;
 
         QVBoxLayout vLayout; //vertical layout
         QHBoxLayout hLayout; //horizontal layout
